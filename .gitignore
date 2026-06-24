@@ -1,0 +1,57 @@
+# WordPress core & config
+wp-config.php
+.htaccess
+
+# WordPress uploads, cache, backups (لا تُضمَّن في Git)
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+
+# Common drop-in files (generated / environment-specific)
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/db.php
+wp-content/sunrise.php
+
+# Plugins / themes build artifacts and vendors
+wp-content/plugins/*/node_modules/
+wp-content/plugins/*/vendor/
+wp-content/themes/*/node_modules/
+wp-content/themes/*/vendor/
+
+# Composer / PHP dependencies
+/vendor/
+composer.lock
+
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# Environment / secrets / local overrides
+.env
+.env.*.local
+
+# Database dumps / archives / backups
+*.sql
+*.sql.gz
+*.zip
+*.tar.gz
+
+# Logs and runtime
+*.log
+*.cache
+*.tmp
+
+# IDEs and OS files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Misc
+.sftp-config.json
